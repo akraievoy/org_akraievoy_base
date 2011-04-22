@@ -1,0 +1,33 @@
+Package: org.akraievoy:base
+Copyright/Maintenance 2011 Anton Kraievoy akraievoy@gmail.com
+
+General-purpose Java code which hopefully would make life easier for some other developer out there.
+The code has been mostly pulled out of my own projects with some minor inclusions/ports.
+Inclusions have a reference to another OSS library. All the included librariy code was Apache (v2) licensed.
+
+Let me know if:
+ * you think I've missed you or someone else in the copyright notices;
+ * you want to re-license this code under any other terms. 
+
+Sample of license header.
+/*
+	This file is part of org.akraievoy:base.
+ 
+	org.akraievoy:base is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	org.akraievoy:base is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with org.akraievoy:base. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+Sample of copyright header.
+/*
+	Copyright ${year} ${author} ${email}
+*/
