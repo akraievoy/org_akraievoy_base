@@ -71,15 +71,15 @@ public class Die {
     }
   }
 
-  public static void ifFalse(String property, boolean condition) {
+  public static void ifFalse(String conditionStr, boolean condition) {
     if (!condition) {
-      throw new IllegalStateException("condition '" + property + "' must be TRUE");
+      throw new IllegalStateException("condition '" + conditionStr + "' must be TRUE");
     }
   }
 
-  public static void ifTrue(String property, boolean condition) {
+  public static void ifTrue(String conditionStr, boolean condition) {
     if (condition) {
-      throw new IllegalStateException("condition '" + property + "' must be FALSE");
+      throw new IllegalStateException("condition '" + conditionStr + "' must be FALSE");
     }
   }
 
