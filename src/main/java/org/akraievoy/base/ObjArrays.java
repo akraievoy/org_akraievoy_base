@@ -23,6 +23,7 @@ import com.google.common.collect.ObjectArrays;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.Collection;
 
 /**
  * Simple shortcuts relevant for ObjectArrays, which, for now, are not present in the Google Guava's library itself.
@@ -171,6 +172,42 @@ public class ObjArrays {
       result[i] = bools[i] != null ? bools[i] : def;
     }
     return result;
+  }
+
+  @Nullable
+  public static int[] unbox(@Nullable final Collection<Integer> ints, final int def) {
+    if (ints == null) {
+      return null;
+    }
+
+    return unbox(ints.toArray(new Integer[ints.size()]), def);
+  }
+
+  @Nullable
+  public static double[] unbox(@Nullable final Collection<Double> doubles, final double def) {
+    if (doubles == null) {
+      return null;
+    }
+
+    return unbox(doubles.toArray(new Double[doubles.size()]), def);
+  }
+
+  @Nullable
+  public static float[] unbox(@Nullable final Collection<Float> floats, final float def) {
+    if (floats == null) {
+      return null;
+    }
+
+    return unbox(floats.toArray(new Float[floats.size()]), def);
+  }
+
+  @Nullable
+  public static boolean[] unbox(@Nullable final Collection<Boolean> bools, final boolean def) {
+    if (bools == null) {
+      return null;
+    }
+
+    return unbox(bools.toArray(new Boolean[bools.size()]), def);
   }
 
   @SuppressWarnings({"unchecked"})
