@@ -36,7 +36,7 @@ import java.lang.annotation.*;
 @Util
 public @interface Util {
   /**
-   * Define a category/classifiers, optional, default is empty
+   * Define a category/classifiers: optional, default is empty
    *
    * @return category/classifier, space separated
    */
